@@ -8,7 +8,7 @@ COPY tomcat.tar.gz /
 COPY start.sh /start.sh
 WORKDIR /
 RUN  cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
-     tar xf apache-tomcat-8.5.20.tar.gz && rm -rf apache-tomcat-8.5.20.tar.gz && \
+     tar xf tomcat.tar.gz && rm -rf tomcat.tar.gz && \
 	 mv tomcat /usr/local && \
 	 chmod +x /start.sh
 	 

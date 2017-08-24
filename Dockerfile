@@ -13,4 +13,5 @@ RUN  cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
 	 chmod +x /start.sh
 	 
 WORKDIR /usr/local/tomcat
+EXPOSE 8080
 CMD ["/start.sh"]

@@ -11,4 +11,4 @@ RUN  cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
 	 mv tomcat /usr/local
 WORKDIR /usr/local/tomcat/bin
 EXPOSE 8080
-CMD ["catalina.sh","run"]
+CMD ["./catalina.sh","run"]
